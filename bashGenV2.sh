@@ -8,8 +8,9 @@ EDITOR=""
 #check to see if there are too many arguments provided
 if [[ ${#} -gt 2 ]]
 then
-  echo "${@} is too many arguments"
+  echo "'${@}' is too many arguments"
   echo "use -h or --help to see proper format"
+  exit 0
 fi
 
 # check for help
