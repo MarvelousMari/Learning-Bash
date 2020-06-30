@@ -10,11 +10,11 @@ if [[ ${#} -gt 2 ]]
 then
   echo "'${@}' is too many arguments"
   echo "use -h or --help to see proper format"
-  exit 0
+  exit 1
 fi
 
 # check for help
-if [[ ${1} == "-h" || ${1} == "--help" ]]
+if [[ ${1} == "-h" || ${1} == "--help" || ${#} -lt 2 ]]
 then
   echo "FILENAME EDITOR"
   echo "FILENAME doesn't need .sh extension"
@@ -43,7 +43,7 @@ then
     then
       VALIDYN=true
       echo "You've choosen not to open the file"
-      exit 0
+      exit 1
     fi
   done
 else
@@ -81,3 +81,5 @@ else
   echo "use -h or --help to get proper format"
   exit 1
 fi
+echo "reached end, exiting with 0"
+exit 0
