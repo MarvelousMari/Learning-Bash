@@ -23,13 +23,13 @@ PASSWORD="${PASSWORD}${SPECCHAR}"
 # check to make sure there are PARAMETERs
 if [[ "${#}" == "0" ]]
 then
-  echo "USER_NAME [COMMENT...]"
+  echo "USER_NAME [COMMENT]..."
   echo "-h or --help for this page"
   exit 1
 # get USER_NAME and COMMENT and check for help
 elif [[ "${1}" == "-h" || "${1}" == "--help" ]]
 then
-  echo "USER_NAME [COMMENT...]"
+  echo "USER_NAME [COMMENT]..."
   echo "-h or --help for this page"
   exit o
 else
