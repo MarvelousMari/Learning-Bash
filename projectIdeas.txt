@@ -4,4 +4,4 @@ Navagate to different places easily
 launch firefox and atom in another workspace/desktop
 generate wordpress html bloc code for daily blog post commit list
 
-test push z
+test push y
